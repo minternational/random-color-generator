@@ -12,8 +12,14 @@ function randomColor() {
   return `#${newColors.join('')}`;
 }
 
+(function generateFirstTime() {
+  for (let i = 1; i < 6; i++) {
+    document.getElementById(`color${i}`).style.backgroundColor = randomColor();
+  }
+})();
+
 const handleClick = () => {
-  for (let i = 1; i < 6; ++i) {
+  for (let i = 1; i < 6; i++) {
     document.getElementById(`color${i}`).style.backgroundColor = randomColor();
   }
 };
