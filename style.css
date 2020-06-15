@@ -1,22 +1,37 @@
 body {
-  background-color: lightgray;
+  background-color: #ebebf3;
 }
 
 #wrapper {
-  height: 500px;
-  width: 50%;
-  margin: 10% 25%;
+  text-align: center;
 }
 
-#color_1 {
+#color1,
+#color2,
+#color3,
+#color4,
+#color5 {
   height: 225px;
   width: 185px;
   border-radius: 3px;
 }
 
-#color_frame {
+#color_frame1,
+#color_frame2,
+#color_frame3,
+#color_frame4,
+#color_frame5 {
   width: 200px;
-  height: 300px;
+  height: 320px;
   background: white;
   border-radius: 3px;
+}
+
+#color-wrapper {
+  display: flex;
+  flex-wrap: inherit;
+  float: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
