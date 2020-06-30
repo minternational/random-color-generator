@@ -1,37 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 body {
   background-color: #ebebf3;
+  color: #5c5c5c;
+}
+
+#header {
+  font-size: 4em;
+  margin: 1em;
 }
 
 #wrapper {
   text-align: center;
 }
 
-#color1,
-#color2,
-#color3,
-#color4,
-#color5 {
+.colorBox {
   height: 225px;
   width: 185px;
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgb(128, 128, 128, 0.5);
 }
 
-#color_frame1,
-#color_frame2,
-#color_frame3,
-#color_frame4,
-#color_frame5 {
-  width: 200px;
+#button {
+  height: 40px;
+  width: 250px;
+  border: white;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0px 1px 5px rgb(128, 128, 128, 0.5);
+  color: #5c5c5c;
+  font-size: 1.2em;
+  outline: none;
+  font-family: 'M PLUS Rounded 4c', sans-serif;
+  margin: 4em;
+}
+
+.whiteBox {
+  width: 205px;
   height: 320px;
   background: white;
-  border-radius: 3px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 1px 10px rgb(128, 128, 128, 0.5);
+  margin: 10px;
 }
 
 #color-wrapper {
   display: flex;
-  flex-wrap: inherit;
-  float: center;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  max-width: 100%;
 }

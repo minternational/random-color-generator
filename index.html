@@ -5,54 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
 
     <title>Random Color Generator</title>
   </head>
   <body>
     <div id="wrapper">
-      <h1 class="text-bold text-4xl text-gray-700 mx-20 my-20">
+      <h1 id="header">
         Random Color Generator
       </h1>
       <div id="color-wrapper">
-        <div
-          id="color_frame1"
-          class="rounded shadow-lg bg-white pt-2 pr-2 pl-2"
-        >
-          <div id="color1" class="shadow-lg"></div>
+        <div id="color_frame1" class="whiteBox">
+          <div id="color1" class="colorBox"></div>
         </div>
-        <div
-          id="color_frame2"
-          class="rounded shadow-lg bg-white pt-2 pr-2 pl-2"
-        >
-          <div id="color2" class="shadow-lg"></div>
+        <div id="color_frame2" class="whiteBox">
+          <div id="color2" class="colorBox"></div>
         </div>
-        <div
-          id="color_frame2"
-          class="rounded shadow-lg bg-white pt-2 pr-2 pl-2"
-        >
-          <div id="color3" class="shadow-lg"></div>
+        <div id="color_frame2" class="whiteBox">
+          <div id="color3" class="colorBox"></div>
         </div>
-        <div
-          id="color_frame4"
-          class="rounded shadow-lg bg-white pt-2 pr-2 pl-2"
-        >
-          <div id="color4" class="shadow-lg"></div>
+        <div id="color_frame4" class="whiteBox">
+          <div id="color4" class="colorBox"></div>
         </div>
-        <div
-          id="color_frame5"
-          class="rounded shadow-lg bg-white pt-2 pr-2 pl-2"
-        >
-          <div id="color5" class="shadow-lg"></div>
+        <div id="color_frame5" class="whiteBox">
+          <div id="color5" class="colorBox"></div>
         </div>
       </div>
-      <button
-        onclick="handleClick()"
-        class="shadow-lg btn-blue bg-white text-gray-700 font-bold mt-20 py-2 px-4 rounded-full"
-      >
+      <button id="button" onclick="handleClick()" class="">
         Generate Random Color
       </button>
     </div>
