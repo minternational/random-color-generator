@@ -15,11 +15,20 @@ function randomColor() {
 (function generateFirstTime() {
   for (let i = 1; i < 6; i++) {
     document.getElementById(`color${i}`).style.backgroundColor = randomColor();
+    var hexCode = document.getElementById(`color${i}`);
+    hexCode.innerHTML = `#${newColors.join('')}`;
   }
 })();
 
 const handleClick = () => {
   for (let i = 1; i < 6; i++) {
     document.getElementById(`color${i}`).style.backgroundColor = randomColor();
+    var hexCode = document.getElementById(`color${i}`);
+    hexCode.innerHTML = `#${newColors.join('')}`;
   }
 };
+
+/*
+const foo = document.createElement('DIV');
+document.getElementById(`color${i}`).appendChild(foo);
+*/
